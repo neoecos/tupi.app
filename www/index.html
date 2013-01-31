@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/app.css">
+		<script type="text/paperscript" canvas="canvas" src="js/tupi.pjs"></script>
+
+	</head>
+	<body>
+		<!-- Use this installation button to install locally without going
+		through the marketpace (see app.js) -->
+		<!-- <button id="install-btn">
+			Install
+		</button> -->
+
+		<!-- Write your application here -->
+		<div id="mainCanvas">
+			<canvas id="canvas" width="310" height="450"></canvas>
+		</div>
+		<div id="controls">
+			<input id="button_palette" class="color btn_palette" type="button" value="66ff00" onchange="changeStyleColor();">
+			</input>
+			<button id="button_brushSizePlus" class="btn btn_brushSizePlus"onclick="changeStrokeSize(2);">
+				<img src="images/plus_sign_small.png" width="16" height="16">
+			</button>
+			<button id="button_brushSizeMinus" class="btn btn_brushSizeMinus" value="-" onclick="changeStrokeSize(-2);">
+				<img src="images/minus_sign_small.png" width="16" height="16">
+			</button>
+			<button id="button_undo" class="btn btn_undo" value="Undo" onclick="undo();">
+				<img src="images/undo.png" width="16" height="16">
+			</button>
+			<button id="button_redo" class="btn btn_undo" value="Undo" onclick="redo();">
+				<img src="images/redo.png" width="16" height="16">
+			</button>
+			<input class="btn btn-primary btn-small" id="submit-button" type="button" value="tupitube.com">
+			</input>
+		</div>
+		<div id="hiddenSVG"></div>
+
+		<!-- Using require.js, a module system for javascript, include the
+		js files. This loads "main.js", which in turn can load other
+		files, all handled by require.js:
+		http://requirejs.org/docs/api.html#jsfiles -->
+		<script type="text/javascript"
+		data-main="js/init.js"
+		src="js/lib/require.js"></script>
+	</body>
+</html>
