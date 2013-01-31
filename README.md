@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A Blank Template for Open Web Apps
 
 The is a minimal template that has a little HTML, CSS, and js to help
@@ -19,3 +20,9 @@ If you have node installed, you can run a development server with volo:
 * volo serve
 
 View the app at http://localhost:8008/.
+=======
+tupi.app
+========
+
+Tupi2D FirefoxOS WebApp
+>>>>>>> 0cae95eb904d9e70f4da361e9f0575318640b6a2
